@@ -7,14 +7,26 @@ import Tomahawk from "./assets/Tomahawk.png";
 import Partners from "./assets/Partners.png";
 import { FaXTwitter, FaInstagram, FaChevronDown } from "react-icons/fa6";
 import atlasWhite from "./assets/atlas-white-nobg.png";
+import basketballGuy from "./assets/basketballGuy.png";
+import footballGuy from "./assets/footballGuy.png";
+import girlWhiteTop from "./assets/girlWhiteTop.png";
+import { Link } from "react-scroll";
+import femalePose from "./assets/femalePose.png";
+import contractPose from "./assets/contractPose.png";
+import bBallPose from "./assets/bBallPose.png";
+import fBallPose from "./assets/fBallPose.png";
+import dunk from "./assets/dunk.png";
 
 function App() {
   return (
     <>
       <TopBar />
-      <div className="custom-landing-page bg-transparent min-h-screen">
-        <div className="bg-black min-h-screen">
-          <section  className="custom-section h-screen flex flex-col justify-center items-center">
+      <div className="bg-transparent ">
+        <div className="bg-black">
+          <section
+            name="one"
+            className="custom-section min-h-screen flex flex-col justify-center items-center"
+          >
             <div className=" flex flex-col justify-center items-center container mx-auto text-white">
               <h1 className="text-4xl font-bold text-center mb-4">
                 Its not easy, <br /> its hard work.
@@ -22,128 +34,141 @@ function App() {
               <p className="text-xl text-center ">
                 Start your journey towards <br /> Empowerment
               </p>
-              <img id="logo" src={atlasWhite} alt="Atlas" className="" />
-              <div className="group flex flex-col justify-center items-center mt-4 cursor-pointer">
+              <img
+                id="logo"
+                src={atlasWhite}
+                alt="Atlas"
+                className="w-[500px]"
+              />
+              <Link to="two" smooth={true} duration={1000}>
+                <div className="group flex flex-col justify-center items-center mt-4 cursor-pointer">
+                  <p className=" text-xs">Learn More</p>
+                  <FaChevronDown className=" group-hover:translate-y-1 duration-300" />
+                </div>
+              </Link>
+            </div>
+          </section>
+          <section
+            name="two"
+            className="min-h-screen min-w-full flex flex-col justify-center items-center"
+          >
+            <div className="container mx-auto px-4">
+              <h2 className="text-2xl sm:text-3xl font-bold text-center mb-4 text-white">
+                The Road to
+                <br /> Empowerment.
+              </h2>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <div className=" rounded mx-auto flex flex-col justify-center items-center">
+                  <h3 className="text-white text-left text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
+                    The Start.
+                  </h3>
+                  <p className="text-white text-sm sm:text-base md:text-lg text-left">
+                    Atlas Sports prepares athletes for collegiate athletics,
+                    offering support and empowering them to build their personal
+                    brand for future opportunities.
+                  </p>
+                </div>
+                <div className="rounded">
+                  <img
+                    src={footballGuy}
+                    alt="Start"
+                    className="mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4"
+                  />
+                </div>
+                <div className=" rounded flex flex-col justify-center items-center">
+                  <h3 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-left mb-4">
+                    The Branding.
+                  </h3>
+                  <p className="text-sm sm:text-base md:text-lg text-white text-left">
+                    Tailored branding for you. Personalization and authenticity
+                    are crucial. We empower athletes to control their careers.
+                  </p>
+                </div>
+                <div className="rounded">
+                  <img
+                    src={girlWhiteTop}
+                    alt="Branding"
+                    className="mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4"
+                  />
+                </div>
+                <div className="rounded flex flex-col justify-center items-center">
+                  <h3 className="text-white text-5xl text-left mb-4">
+                    The Vision.
+                  </h3>
+                  <p className="text-lg text-white text-left">
+                    Empowering athletes to shape their own futures through
+                    personalized branding and authentic self-expression.
+                  </p>
+                </div>
+                <div className="rounded">
+                  <img
+                    src={basketballGuy}
+                    alt="Vision"
+                    className="mx-auto w-full sm:w-1/2 lg:w-1/3 xl:w-1/4"
+                  />
+                </div>
+              </div>
+              <Link to="three" smooth={true} duration={1000}>
+                <div className="group flex text-white flex-col justify-center items-center mt-4 cursor-pointer">
+                  <p className=" text-xs">Learn More</p>
+                  <FaChevronDown className=" group-hover:translate-y-1 duration-300" />
+                </div>
+              </Link>
+            </div>
+          </section>
+          <section name="three" className=" py-20 min-h-screen">
+            <div className="container mx-auto">
+              <div className="flex flex-col sm:flex-row w-full">
+                <img src={femalePose} alt="" className="w-[300px] h-[400px]" />
+                <img
+                  src={contractPose}
+                  alt=""
+                  className="w-[300px] h-[400px]"
+                />
+                <img src={bBallPose} alt="" className="w-[300px] h-[400px]" />
+                <img src={fBallPose} alt="" className="w-[300px] h-[400px]" />
+                <img src={dunk} alt="" className="w-[300px] h-[400px]" />
+              </div>
+              <div className="flex flex-col justify-start items-center pb-10">
+                <div className="flex">
+                  <h3 className="text-white text-xl italic">The</h3>
+                  <h1 className="text-white text-4xl">Marketplace</h1>
+                </div>
+                <h2 className="text-white text-3xl">The Future Of Atlas.</h2>
+              </div>
+              <div className="flex gap-x-4 justify-center">
+                <div className="p-4 rounded shadow-md text-white bg-[#373737] flex flex-col justify-start">
+                  <h2>Birthday shoutouts</h2>
+                  <p>Unique and memorable gifts</p>
+                </div>
+                <div className="p-4 rounded shadow-md text-white bg-[#373737] flex flex-col justify-start">
+                  <h2>Endorsements</h2>
+                  <p>Launch a new product</p>
+                </div>
+
+                <div className="p-4 rounded shadow-md text-white bg-[#373737] flex flex-col justify-start">
+                  <h2>Autographs</h2>
+                  <p>Add to your collection</p>
+                </div>
+                <div className="p-4 rounded shadow-md text-white bg-[#373737] flex flex-col justify-start">
+                  <h2>Appearances</h2>
+                  <p>Promote your local event</p>
+                </div>
+                <div className="p-4 rounded shadow-md text-white bg-[#373737] flex flex-col justify-start">
+                  <h2>Encouragement videos</h2>
+                  <p>Celebrate a recent achievement</p>
+                </div>
+              </div>
+            </div>
+            <Link to="four" smooth={true} duration={1000}>
+              <div className="group text-white flex flex-col justify-center items-center mt-4 cursor-pointer">
                 <p className=" text-xs">Learn More</p>
                 <FaChevronDown className=" group-hover:translate-y-1 duration-300" />
               </div>
-            </div>
+            </Link>
           </section>
-          <section className="custom-section py-20">
-            <div className="container mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-4 text-white">
-                Create Stunning Images with AI
-              </h2>
-              <p className="text-lg text-white text-center mb-8">
-                CreateA.Img is an AI-driven image generation tool that can help
-                you create professional-quality photos and marketing materials.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">Fast</h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    Our AI algorithms work quickly to generate high-quality
-                    images in no time.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?fast"
-                    alt="Fast"
-                    className="mx-auto h-20"
-                  />
-                </div>
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">Easy</h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    CreateA.Img is easy to use and requires no technical
-                    expertise.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?easy"
-                    alt="Easy"
-                    className="mx-auto h-20"
-                  />
-                </div>
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">Affordable</h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    Our pricing plans are flexible and affordable, making it
-                    easy to use our tool without breaking the bank.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?affordable"
-                    alt="Affordable"
-                    className="mx-auto h-20"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="custom-section py-20">
-            <div className="container mx-auto">
-              <h2 className="text-3xl font-bold text-center mb-4 text-white">
-                Features of CreateA.Img
-              </h2>
-              <p className="text-lg text-white text-center mb-8">
-                CreateA.Img comes with a range of features that can help you
-                create stunning images.
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">Image Filters</h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    CreateA.Img comes with a range of image filters that can
-                    help you enhance your photos and create stunning effects.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?filters"
-                    alt="Filters"
-                    className="mx-auto h-20"
-                  />
-                </div>
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">
-                    Image Manipulation
-                  </h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    CreateA.Img allows you to manipulate your images in a
-                    variety of ways, including cropping, resizing, and more.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?manipulation"
-                    alt="Manipulation"
-                    className="mx-auto h-20"
-                  />
-                </div>
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">
-                    Image Generation
-                  </h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    CreateA.Img uses AI algorithms to generate high-quality
-                    images based on your inputs and preferences.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?generation"
-                    alt="Generation"
-                    className="mx-auto h-20"
-                  />
-                </div>
-                <div className=" p-8 rounded shadow-md">
-                  <h3 className="text-white text-center mb-4">Customization</h3>
-                  <p className="text-lg text-white text-center mb-4">
-                    CreateA.Img allows you to customize your images by adjusting
-                    various settings and parameters.
-                  </p>
-                  <img
-                    src="https://source.unsplash.com/featured/?customization"
-                    alt="Customization"
-                    className="mx-auto h-20"
-                  />
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="custom-section py-20 bg-white">
+          <section name="four" className="custom-section py-20 bg-white">
             <div className="container mx-auto">
               <img src={Partners} alt="Partners" className="ml-8 mb-8" />
 
