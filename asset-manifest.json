@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/atlas-landing/static/css/main.330abc90.css",
+    "main.js": "/atlas-landing/static/js/main.3479d9a0.js",
+    "static/media/bBallPose.png": "/atlas-landing/static/media/bBallPose.42e9c28ae2314a5d43cf.png",
+    "static/media/femalePose.png": "/atlas-landing/static/media/femalePose.195313045033a1bbf175.png",
+    "static/media/contractPose.png": "/atlas-landing/static/media/contractPose.e2febc319571c6a131e4.png",
+    "static/media/fBallPose.png": "/atlas-landing/static/media/fBallPose.4493f534884fdfee7779.png",
+    "static/media/basketballGuy.png": "/atlas-landing/static/media/basketballGuy.316bcdd28bc39a84bc19.png",
+    "static/media/dunk.png": "/atlas-landing/static/media/dunk.5ce70292aaea9a4955d1.png",
+    "static/media/footballGuy.png": "/atlas-landing/static/media/footballGuy.a0f69f31d6b91720141c.png",
+    "static/media/girlWhiteTop.png": "/atlas-landing/static/media/girlWhiteTop.a069c2f784ff934b15b1.png",
+    "static/media/atlas-white-nobg.png": "/atlas-landing/static/media/atlas-white-nobg.ea3dd669a8f2bb53ef05.png",
+    "index.html": "/atlas-landing/index.html",
+    "main.330abc90.css.map": "/atlas-landing/static/css/main.330abc90.css.map",
+    "main.3479d9a0.js.map": "/atlas-landing/static/js/main.3479d9a0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.330abc90.css",
+    "static/js/main.3479d9a0.js"
+  ]
+}
